@@ -1,0 +1,1313 @@
+/* ===========================================
+   GLOBAL STYLES & RESET
+   =========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:wght@100..900&family=Spline+Sans:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+section {
+    padding: 10vw;
+}
+
+img {
+    width: 100%;
+}
+
+input {
+    display: flex;
+    padding: 0;
+}
+
+/* ===========================================
+   APP COMPONENT STYLES
+   =========================================== */
+
+
+/* ===========================================
+   HEADER COMPONENT STYLES
+   =========================================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5vw 6.6vw;
+    background-color: #FFF;
+}
+
+.header-left {
+    display: flex;
+    gap: 3.8vw;
+    align-items: center;
+    color: #606060;
+    font-family: Inter;
+    font-size: 1.24vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.86vw;
+    text-transform: uppercase;
+}
+
+.header-right {
+    display: flex;
+    gap: 2.2vw;
+    align-items: center;
+}
+
+.searcher {
+    display: flex;
+    background-color: #EDEDED;
+    align-items: center;
+    padding: 1.25vw 5.8vw 1.25vw 1.5vw;
+    gap: 1.74vw;
+    border-radius: 1.04vw;
+}
+
+.searcher p {
+    color: #C2C3CB;
+    font-family: "Poppins";
+    font-size: 1.09vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 117.5%;
+    letter-spacing: -0.02vw;
+}
+
+.searcher img {
+    width: 1.46vw;
+    height: 1.46vw;
+}
+
+.header input {
+    display: flex;
+    padding: 1.53vw 1.25vw 0 1.25vw;
+    fill: #EDEDED;
+}
+
+.header button {
+    display: flex;
+    height: 100%;
+    padding: 0.7vw 1.05vw;
+    align-items: center;
+    gap: 0.44vw;
+    border-radius: 0.7vw;
+    background: #141416;
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 0.7vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.05vw;
+    text-transform: uppercase;
+}
+
+.header button:hover {
+    background: #676767;
+    cursor: pointer;
+}
+
+.chosen {
+    color: black;
+    font-weight: 700;
+}
+
+/* ===========================================
+   HERO SECTION STYLES
+   =========================================== */
+.hero {
+    display: flex;
+    padding: 10vw 6.6vw;
+    gap: 3.33vw;
+    background-color: #FFF;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.125vw;
+    flex: 1;
+}
+
+.hero-left hr {
+    margin-bottom: 0.69vw;
+    width: 13.54vw;
+    height: 0.07vw;
+    opacity: 0.2;
+    background: #201F1F;
+}
+
+.hero-left h1 {
+    color: #141416;
+    font-family: "Poppins";
+    font-size: 5.21vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.21vw;
+    text-transform: capitalize;
+}
+
+.hero-left p {
+    color: #676767;
+    text-align: justify;
+    font-family: "Inter";
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.94vw;
+}
+
+.hero-left b {
+    color: #141416;
+    font-weight: 600;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.11vw;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1vw;
+    width: 75%;
+}
+
+.hero-solid__button {
+    display: flex;
+    padding: 1vw;
+    width: 40%;
+    text-align: center;
+    align-items: center;
+    color: #FFF;
+    font-family: "Poppins";
+    font-size: 1.13vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.011vw;
+    text-transform: uppercase;
+    border-radius: 0.86vw;
+    background: #000;
+}
+
+.hero-outline__button {
+    display: flex;
+    padding: 1.25% 1.39%;
+    align-items: center;
+    color: #000;
+    font-family: "Poppins";
+    font-size: 1.13rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.011rem;
+    text-transform: uppercase;
+    border-radius: 0.86rem;
+    border: 0.1rem solid #000;
+    background: transparent;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 4.44vw;
+    margin-top: 4.17vw;
+}
+
+.hero-stats h2 {
+    color: #141416;
+    text-align: center;
+    font-family: "Public Sans";
+    font-size: 2.55vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.19vw;
+}
+
+.hero-stats p {
+    color: #848586;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 0.85vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.28vw;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.42vw;
+}
+
+/* ===========================================
+   WEEKLY SECTION STYLES
+   =========================================== */
+.weekly {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 6.94vw;
+    background: #F1F1F1;
+    padding: 4.86vw 0;
+    padding-bottom: 6.25vw;
+}
+
+.weekly-title {
+    color: #C5C5C5;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 3.13vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.87vw;
+}
+
+.weekly-list {
+    display: flex;
+    justify-content: space-around;
+    width: 120vw;
+    gap: 2vw;
+}
+
+/* ===========================================
+   WEEKLY CARD COMPONENT STYLES
+   =========================================== */
+.weekly-card {
+    position: relative;
+    width: 21%;
+    padding: 1.46vw 1.25vw;
+    background-color: #FFF;
+    border-radius: 1.67vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25vw;
+}
+
+.week-timer {
+    display: flex;
+    padding: 0.65vw 0.98vw;
+    justify-content: center;
+    align-items: center;
+    gap: 0.82vw;
+    flex-shrink: 0;
+    border-radius: 0.65vw;
+    border: 0.08vw solid rgba(28, 29, 32, 0.08);
+    background: rgba(28, 29, 32, 0.35);
+    box-shadow: 0 0.33vw 0.98vw 0 rgba(28, 29, 32, 0.08);
+    backdrop-filter: blur(0.16vw);
+    color: var(--Others-White, #FFF);
+    font-family: "Poppins";
+    font-size: 0.98vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.008vw;
+    position: absolute;
+    top: 2.08vw;
+    right: 2.08vw;
+    z-index: 2;
+}
+
+.weekly-card__img img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+.week-card__img {
+    display: flex;
+}
+
+.week-card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.04vw;
+}
+
+.week-card__info h3 {
+    color: #141416;
+    font-family: Poppins;
+    font-size: 1.47vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.week-card__price {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35vw;
+}
+
+.week-card__price span {
+    color: #94A3B8;
+    font-family: Poppins;
+    font-size: 0.98vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.008vw;
+}
+
+.week-card__eth {
+    display: flex;
+    align-items: center;
+    height: min-content;
+    gap: 0.14vw;
+}
+
+.week-card__eth h4 {
+    color: #141416;
+    font-family: Poppins;
+    font-size: 1.14vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.week-card__eth img {
+    width: 2.08vw;
+}
+
+.week-card__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.week-card__button {
+    display: flex;
+    padding: 0.65vw 1.31vw;
+    justify-content: center;
+    align-items: center;
+    gap: 0.82vw;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 0.98vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.008vw;
+    border-radius: 0.82vw;
+    background: #141416;
+    width: 50%;
+}
+
+/* ===========================================
+   COLLECTION SECTION STYLES
+   =========================================== */
+.collection {
+    display: flex;
+    flex-direction: column;
+    gap: 6.25vw;
+    padding: 10vw 6.94vw;
+}
+
+.collection-title {
+    display: flex;
+    align-self: center;
+    color: #141416;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 3.13vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.11vw;
+}
+
+.collection-sheet__titles {
+    display: flex;
+    justify-content: space-between;
+    color: #93989A;
+    font-family: Poppins;
+    font-size: 1.53vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.015vw;
+}
+
+.collection-right {
+    display: flex;
+    gap: 6.39vw;
+}
+
+.collection-profile__text {
+    display: flex;
+    width: 40%;
+    gap: 1.67vw;
+}
+
+.collection-profile__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-var {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.78vw 0;
+}
+
+.collection-profile__title h4 {
+    color: #141416;
+    font-family: Poppins;
+    font-size: 1.94vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    height: 50%;
+}
+
+.collection-profile__title p {
+    color: #64748B;
+    font-family: Poppins;
+    font-size: 1.58vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    height: 50%;
+}
+
+.collection-profile__right {
+    display: flex;
+    width: 70%;
+    align-items: center;
+}
+
+.collection-profile__volume {
+    display: flex;
+    gap: 0.28vw;
+    align-items: center;
+    color: #141416;
+    font-family: Poppins;
+    font-size: 1.7vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.collection-profile__volume img {
+    width: 2.22vw;
+    height: 2.22vw;
+}
+
+.collection-profile__percent {
+    color: #10C352;
+    font-family: Poppins;
+    font-size: 1.7vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.017vw;
+    margin-left: 5.56vw;
+}
+
+.collection-profile__fprice {
+    display: flex;
+    color: #141416;
+    font-family: Poppins;
+    font-size: 1.7vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    margin-left: 4.44vw;
+}
+
+.collection-profile__fprice img {
+    width: 2.22vw;
+    height: 2.22vw;
+}
+
+.collection-profile__owners {
+    color: var(--Black-01, #010101);
+    font-family: Poppins;
+    font-size: 1.64vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.016vw;
+    margin-left: 10.07vw;
+}
+
+.collection-profile__items {
+    color: var(--Black-01, #010101);
+    font-family: Poppins;
+    font-size: 1.64vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.016vw;
+    margin-left: 9.72vw;
+}
+
+/* ===========================================
+   MARKETPLACE SECTION STYLES
+   =========================================== */
+.marketplace {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4.86vw;
+    padding: 10vw 6.25vw;
+}
+
+.marketplace h2 {
+    color: #141416;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 3.13vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.87vw;
+}
+
+.marketplace-categories {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1.53vw;
+}
+
+.marketplace-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5vw;
+    justify-content: space-between;
+    row-gap: 4vw;
+}
+
+.marketplace-list .weekly-card {
+    width: 21%;
+    border-radius: 31.467px;
+    background: var(--Others-White, #FFF);
+    box-shadow: 23.705px 15.734px 78.668px 0 rgba(199, 199, 199, 0.60);
+}
+.marketplace-list .weekly-card .week-card__button {
+    width: 52%;
+}
+/* ===========================================
+   CATEGORIES COMPONENT STYLES
+   =========================================== */
+.category {
+    display: flex;
+    padding: 1.25vw;
+    justify-content: center;
+    align-items: center;
+    gap: 0.61vw;
+    flex-shrink: 0;
+    border-radius: 0.92vw;
+    border: 0.15vw solid #141416;
+}
+
+/* ===========================================
+   EXPLORE COMPONENT STYLES
+   =========================================== */
+.explore {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    gap: 1.11vw;
+}
+
+.explore h5 {
+    color: var(--Dark-Grey, #ACADB9);
+    text-align: right;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 1.23vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.77vw;
+    letter-spacing: -0.006vw;
+}
+
+.explore span {
+    color: #141416;
+    font-weight: 700;
+}
+
+.marketplace .explore {
+    display: flex;
+    align-self: flex-end;
+}
+
+/* ===========================================
+   FAQ SECTION STYLES
+   =========================================== */
+.faq-title h2 {
+    color: #18181B;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 3.39vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 5.56vw;
+}
+
+.faq-title span {
+    color: #c5c5c5;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    padding: 10vw 6.25vw;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #323142;
+    font-family: Poppins;
+    font-size: 1.76vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4.46vw;
+}
+
+.question hr {
+    border: 0.07vw solid #E6E8EC;
+    margin: 1.11vw 0;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===========================================
+   SUBSCRIBE SECTION STYLES
+   =========================================== */
+.subscribe {
+    padding: 10vw 8.33vw;
+}
+
+.subscribe-popup {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.22vw;
+    border-radius: 2.08vw;
+    background: #141416;
+}
+
+.subscribe-title {
+    color: var(--White-01, #FFF);
+    font-family: Poppins;
+    font-size: 3.13vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.031vw;
+}
+
+.subscribe-subtitle {
+    color: #D4D4D4;
+    font-family: Poppins;
+    font-size: 1.41vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.014vw;
+}
+
+.subscribe-button__solid {
+    display: flex;
+    padding: 1.74vw 1.81vw;
+    justify-content: center;
+    align-items: center;
+    gap: 1.04vw;
+    border-radius: 0.85vw;
+    background: var(--White-01, #FFF);
+    color: #141416;
+    font-family: Outfit;
+    font-size: 1.48vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.015vw;
+}
+
+.subscribe-button__linear {
+    display: flex;
+    padding: 1.39vw 1.81vw;
+    justify-content: center;
+    align-items: center;
+    gap: 1.04vw;
+    color: var(--White-01, #FFF);
+    font-family: Outfit;
+    font-size: 1.48vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.015vw;
+    border-radius: 0.85vw;
+    border: 0.16vw solid var(--White-01, #FFF);
+    background: empty;
+}
+
+.subscribe-buttons {
+    display: flex;
+    gap: 2.22vw;
+}
+
+.subscribe-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.83vw;
+}
+
+.subscribe-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2.22vw;
+}
+
+.subscribe-right {
+    width: 40%;
+    border-radius: 1.11vw;
+    flex-shrink: 0;
+}
+
+.subscribe-right img {
+    border-radius: 2.78vw;
+}
+
+/* ===========================================
+   NAVIGATOR COMPONENT STYLES
+   =========================================== */
+.navigator {
+    display: flex;
+    width: 11.53vw;
+    height: 4.79vw;
+    padding: 1.5vw;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 2.43vw;
+    border-radius: 1.2vw;
+    box-shadow: 0 2.99vw 2.39vw -1.8vw rgba(15, 15, 15, 0.12);
+    border: 0.07vw solid #E6E6E6;
+    margin-left: 7.78vw;
+}
+
+.navigator hr {
+    border-radius: 0.15vw;
+    background: var(--Neutrals-6, #E6E8EC);
+    width: 0.15vw;
+    height: 1.8vw;
+}
+
+.navigator img {
+    width: 1.8vw;
+    height: 1.8vw;
+    cursor: pointer;
+}
+
+.arrow-left {
+    transform: rotate(180deg);
+}
+
+.disactived__arrow {
+    opacity: 0.3;
+}
+
+/* ===========================================
+   FOOTER COMPONENT STYLES
+   =========================================== */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5.56vw 6.67vw;
+    background-color: #FFF;
+    background: #141416;
+}
+
+.footer-up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo h2 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 2.08vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #B9B9B9;
+    font-family: Inter;
+    font-size: 1.24vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.86vw;
+    text-transform: capitalize;
+    gap: 4.86vw;
+}
+
+.footer hr {
+    margin: 3.06vw 0 3.96vw 0;
+    opacity: 0.25;
+    background: #818181;
+}
+
+.footer-down {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-down span {
+    color: #999;
+    font-family: Inter;
+    font-size: 1.18vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.74vw;
+}
+
+.footer-media {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+/* ===========================================
+   PRODUCT COMPONENT STYLES
+   =========================================== */
+.product {
+    padding: 6vw 10vw;
+}
+
+.product-popup {
+    display: flex;
+    flex-direction: column;
+    gap: 4.1667vw
+}
+
+.product-popup__popup {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5vw;
+    border-radius: 1.696vw;
+    gap: 9.375vw;
+    background: #FAFAFA;
+    box-shadow: 1.2195vw 1.2195vw 4.2401vw 0 rgba(0, 0, 0, 0.12);
+}
+
+.product-popup__title {
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+}
+
+.product-popup__title h3 {
+    color: var(--Neutrals-2, #23262F);
+    font-family: Poppins;
+    font-size: 2.1558vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.9174vw;
+    /* 88.889% */
+}
+
+.product .popup-right__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.product .popup-right__title h2 {
+    color: #292B39;
+    font-family: Poppins;
+    font-size: 3.2vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.2097vw;
+    /* 62.339% */
+}
+
+.product .popup-right__title p {
+    color: rgba(136, 136, 136, 0.70);
+    font-family: Poppins;
+    font-size: 1.3196vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.0234vw;
+    /* 153.333% */
+}
+
+.popup-profiles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-profile {
+    display: flex;
+    gap: 1.1111vw;
+}
+
+.popup-profile__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-profile__title span {
+    color: #8D8D8D;
+    font-family: Poppins;
+    font-size: 1.2285vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.popup-profile__title h4 {
+    color: var(--Light-100, #000);
+    font-family: Poppins;
+    font-size: 1.7756vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.7225vw;
+    /* 153.333% */
+}
+
+.product-popup__left {
+    display: flex;
+    border-radius: 1.6648vw;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    height: 40vw;
+}
+
+.product-popup__right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 4.4444vw;
+}
+
+.product .popup-date {
+    display: flex;
+    flex-direction: column;
+}
+
+.product .popup-date span {
+    color: #8C8C8C;
+    font-family: Poppins;
+    font-size: 1.2403vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5266vw;
+    /* 123.077% */
+}
+
+.product .popup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1.1290vw;
+    flex-shrink: 0;
+    border-radius: 1.3626vw;
+    background: #141416;
+    padding: 1.7361vw;
+}
+
+.product .popup-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 3.8194vw;
+}
+
+.product .popup-button p {
+    color: var(--White, #FFF);
+    font-family: Poppins;
+    font-size: 1.2774vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.9587vw;
+    /* 153.333% */
+}
+
+.product .popup-right__title {
+    display: flex;
+    flex-direction: column;
+    gap: 2.0833vw;
+}
+
+.product .popup-top {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+.product .popup-bottom__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product .popup-eth span {
+    color: #8C8C8C;
+    font-family: Poppins;
+    font-size: 1.2403vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5266vw;
+    /* 123.077% */
+}
+
+.product .popup-eth__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product .popup-eth__price h3 {
+    color: #292B39;
+    font-family: Poppins;
+    font-size: 2.2895vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.product .popup-date {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-between;
+}
+
+.product-creator {
+    display: flex;
+    flex-direction: column;
+    gap: 2.7778vw;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 9.1667vw;
+}
+
+/* ===========================================
+   CREATOR COMPONENT STYLES
+   =========================================== */
+.product-creator .creator-title {
+    color: #C3C3C3;
+    font-family: Poppins;
+    font-size: 2.1558vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.9174vw;
+    /* 88.889% */
+}
+
+.product-creator .creator-list {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.creator-card img {
+    border-radius: 11.635px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.product-creator .creator-card {
+    display: flex;
+    width: 15%;
+    padding: 0.9696vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.4848vw;
+    border-radius: 1.2118vw;
+    background: #FFF;
+    box-shadow: 1.2118vw 0.8073vw 4.1397vw 0 rgba(97, 97, 97, 0.25);
+    flex-shrink: 0;
+}
+
+.product-creator .card-name {
+    display: flex;
+    align-items: center;
+    gap: 0.3472vw;
+}
+
+.product-creator .card-name span {
+    color: #141416;
+    font-family: Poppins;
+    font-size: 0.9723vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5279vw;
+    /* 157.143% */
+}
+
+.product-creator .creator-title h4 {
+    color: #141416;
+    font-family: Poppins;
+    font-size: 1.2074vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.8974vw;
+    /* 157.143% */
+}
+
+.product-creator .creator-card__bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product-creator .creator-card__eth {
+    display: flex;
+    gap: 0.3472vw;
+    align-items: center;
+}
+
+.product-creator .creator-card__like {
+    display: flex;
+    gap: 0.3472vw;
+    align-items: center;
+}
+
+/* ===========================================
+   MEDIA QUERIES FOR DESKTOP ADAPTATION
+   =========================================== */
+
+/* Large Desktop (1920px and up) */
+@media (min-width: 1920px) {
+    .hero-left h1 {
+        font-size: 4.5vw;
+    }
+
+    .weekly-title {
+        font-size: 2.8vw;
+    }
+
+    .header-left {
+        font-size: 1.1vw;
+    }
+}
+
+/* Standard Desktop (1440px - 1919px) */
+@media (min-width: 1440px) and (max-width: 1919px) {
+    .hero-left h1 {
+        font-size: 5.21vw;
+    }
+
+    .weekly-title {
+        font-size: 3.13vw;
+    }
+
+    .header-left {
+        font-size: 1.24vw;
+    }
+}
+
+/* Small Desktop (1280px - 1439px) */
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .hero-left h1 {
+        font-size: 5.5vw;
+    }
+
+    .weekly-title {
+        font-size: 3.3vw;
+    }
+
+    .header-left {
+        font-size: 1.3vw;
+    }
+
+    .hero {
+        padding: 10vw 5vw;
+        gap: 2.5vw;
+    }
+
+    .header {
+        padding: 2vw 5vw;
+    }
+}
+
+/* Very Small Desktop (1024px - 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .hero-left h1 {
+        font-size: 6vw;
+    }
+
+    .weekly-title {
+        font-size: 3.5vw;
+    }
+
+    .header-left {
+        font-size: 1.4vw;
+    }
+
+    .hero {
+        padding: 10vw 4vw;
+        gap: 2vw;
+    }
+
+    .header {
+        padding: 1.5vw 4vw;
+    }
+
+    .weekly {
+        padding: 3vw 0;
+        padding-bottom: 4vw;
+    }
+
+    .collection {
+        padding: 10vw 4vw;
+    }
+
+    .marketplace {
+        padding: 10vw 4vw;
+    }
+
+    .faq {
+        padding: 10vw 4vw;
+    }
+
+    .subscribe {
+        padding: 10vw 4vw;
+    }
+}
